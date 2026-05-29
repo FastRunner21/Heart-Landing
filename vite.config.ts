@@ -20,7 +20,10 @@ export default defineConfig(({ mode }) => {
       cssCodeSplit: false,
       assetsInlineLimit: 100000000,
     },
-    base: '/Heart-Landing/', // 🔹 Tohle přidej
+
+    // 🔹 Tady vlož base
+    base: '/Heart-Landing/',
+
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
