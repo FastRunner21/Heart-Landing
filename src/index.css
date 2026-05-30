@@ -52,7 +52,6 @@ footer {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: auto; /* nebo 100%, pokud chceš přes celou šířku */
   text-align: center;
   color: #ff4d6d;
   font-family: 'Fira Code', monospace;
@@ -60,3 +59,13 @@ footer {
   padding: 10px 0;
   z-index: 50;
 }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: translateX(-50%) scale(1); }
+  50% { opacity: 0.7; transform: translateX(-50%) scale(1.1); }
+}
+
+footer {
+  animation: pulse 2s infinite;
+}
+
