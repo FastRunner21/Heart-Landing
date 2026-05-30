@@ -48,14 +48,15 @@
 }
 
 footer {
-  position: fixed;      /* přilepí footer na obrazovku */
-  bottom: 0;            /* umístí ho úplně dolů */
-  left: 0;              /* zarovná ho k levému okraji */
-  width: 100%;          /* roztáhne přes celou šířku */
-  text-align: center;   /* zarovná text doprostřed */
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* nebo 100%, pokud chceš přes celou šířku */
+  text-align: center;
   color: #ff4d6d;
   font-family: 'Fira Code', monospace;
   background-color: transparent;
-  padding: 10px 0;      /* malý vnitřní okraj pro estetiku */
-  z-index: 50;          /* aby byl nad ostatními prvky */
+  padding: 10px 0;
+  z-index: 50;
 }
