@@ -46,3 +46,13 @@
   0% { bottom: 100%; }
   100% { bottom: -100px; }
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #ff4d6d;
+  font-family: 'Fira Code', monospace;
+  background-color: transparent;
+}
